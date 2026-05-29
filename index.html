@@ -2,133 +2,205 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Best cleaning services in Yuma AZ | Bonanza Network</title>
-  <meta name="description" content="Best cleaning services in Yuma AZ — find trusted local residential and commercial cleaners, tips for hiring in Yuma, and community-minded providers on Bonanza Network.">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Best cleaning services in Yuma AZ — Find Local Cleaners</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Best cleaning services in Yuma AZ — find reliable local cleaners, seasonal tips for Yuma's climate, and trusted listings on Bonanza Network.">
   <style>
     :root{
-      --brand:#f97316;
-      --bg:#ffffff;
-      --muted:#6b7280;
-      --text:#111827;
-      --card-shadow: 0 6px 18px rgba(15,23,42,0.06);
-      --radius:10px;
+      --accent: #f97316;
+      --bg: #ffffff;
+      --muted: #4b5563;
+      --card: #fff;
+      --radius: 10px;
+      --max-width: 1000px;
+      --gutter: 16px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     }
+
+    *,*::before,*::after{box-sizing:border-box;}
     html,body{height:100%;}
     body{
       margin:0;
-      background:linear-gradient(180deg, #fff 0%, #fff 100%);
-      color:var(--text);
+      background: linear-gradient(180deg, #fff 0%, #fff 100%);
+      color: #111827;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
-      display:flex;
-      align-items:flex-start;
-      justify-content:center;
-      padding:40px 20px;
+      line-height:1.5;
+      font-size:16px; /* ensure readable on mobile */
+      padding:16px;
+      overflow-x:hidden; /* prevent horizontal overflow */
     }
-    .container{
-      width:100%;
-      max-width:900px;
+
+    .site {
+      max-width: var(--max-width);
+      margin: 0 auto;
     }
-    header.site-header{
-      background:var(--brand);
-      color:white;
-      padding:28px;
-      border-radius:var(--radius);
-      box-shadow:var(--card-shadow);
+
+    header {
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:16px;
-    }
-    header .title{
-      margin:0;
-      font-size:22px;
-      line-height:1.1;
-      font-weight:700;
-    }
-    header .sub{
-      font-size:13px;
-      opacity:.95;
-      color:rgba(255,255,255,0.95);
-      margin-top:6px;
-      font-weight:500;
-    }
-    main.card{
-      background:var(--bg);
-      margin-top:18px;
-      padding:28px;
-      border-radius:var(--radius);
-      box-shadow:var(--card-shadow);
-    }
-    h1{
-      margin:0 0 12px 0;
-      font-size:26px;
-      color:var(--brand);
-    }
-    p{
-      margin:0 0 14px 0;
-      line-height:1.6;
-      color:#333;
-      font-size:15px;
-    }
-    .cta{
-      display:flex;
       gap:12px;
+      margin-bottom:18px;
+    }
+
+    .brand {
+      display:flex;
       align-items:center;
-      margin:18px 0;
-    }
-    .btn{
-      background:var(--brand);
-      color:white;
-      border:none;
-      padding:12px 18px;
-      border-radius:8px;
+      gap:10px;
       text-decoration:none;
-      font-weight:700;
-      display:inline-block;
-      box-shadow: 0 6px 18px rgba(249,115,22,0.18);
+      color:inherit;
     }
-    .btn:hover{opacity:.95;}
-    .note{
-      font-size:13px;
+    .logo {
+      width:44px;
+      height:44px;
+      background:var(--accent);
+      border-radius:8px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:700;
+      box-shadow: 0 2px 6px rgba(249,115,22,0.18);
+      flex-shrink:0;
+    }
+
+    h1{
+      font-size:1.25rem;
+      margin:0;
+      color: #111827;
+    }
+
+    .layout {
+      display:flex;
+      gap:20px;
+      align-items:flex-start;
+    }
+
+    main {
+      flex:1 1 0%;
+      min-width:0;
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+    }
+
+    aside {
+      width:320px;
+      flex-shrink:0;
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+      height:fit-content;
+    }
+
+    .meta {
       color:var(--muted);
+      font-size:0.94rem;
+      margin-bottom:12px;
     }
-    .faq{
-      margin-top:18px;
-    }
-    .faq h2{
+
+    p {
       margin:0 0 12px 0;
-      font-size:18px;
-      color:#111;
-    }
-    .qa{
-      border-top:1px solid #eef2f6;
-      padding:12px 0;
-    }
-    .question{
-      font-weight:700;
-      color:#111827;
-      margin-bottom:6px;
-      font-size:15px;
-    }
-    .answer{
       color:#374151;
-      font-size:14px;
-      line-height:1.5;
+      font-size:1rem;
     }
+
+    .cta {
+      display:inline-block;
+      background:var(--accent);
+      color:#fff;
+      text-decoration:none;
+      padding:14px 18px;
+      border-radius:8px;
+      font-weight:600;
+      text-align:center;
+      box-shadow: 0 6px 18px rgba(249,115,22,0.18);
+      transition:transform .12s ease, box-shadow .12s ease;
+      margin-top:12px;
+      display:block;
+      width:auto;
+    }
+    .cta:hover{ transform:translateY(-2px); }
+
+    .full-cta { width:100%; }
+
+    .local-tip{
+      background:#fff7ed; /* very light orange */
+      border-left:4px solid var(--accent);
+      padding:12px;
+      margin:12px 0;
+      border-radius:8px;
+      color:#7a4b1b;
+      font-size:0.95rem;
+    }
+
+    .faq {
+      margin-top:14px;
+    }
+    .faq h3 { font-size:1.05rem; margin:0 0 8px 0; }
+    .faq-item { margin-bottom:12px; }
+    .faq-item summary{
+      font-weight:600;
+      cursor:pointer;
+      list-style:none;
+      outline:none;
+    }
+    .faq-item details[open] summary { color:var(--accent); }
+    .faq-item p { margin:8px 0 0 0; color:#374151; }
+
+    .explore-list { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px; }
+    .explore-list a {
+      text-decoration:none;
+      background:#fff;
+      border:1px solid #f3f4f6;
+      padding:10px;
+      border-radius:8px;
+      color:#111827;
+      display:block;
+    }
+
     footer{
       margin-top:18px;
-      padding:14px 10px;
-      text-align:center;
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      align-items:center;
       color:var(--muted);
-      font-size:13px;
+      font-size:0.9rem;
+      flex-wrap:wrap;
     }
-    footer a{color:var(--brand); text-decoration:none; font-weight:600;}
-    @media (max-width:520px){
-      header{flex-direction:column; align-items:flex-start;}
-      .btn{width:100%; text-align:center;}
+    footer a { color:var(--accent); text-decoration:none; font-weight:600; }
+
+    /* Mobile-first: single column layout; stack aside below main */
+    @media (max-width: 599px){
+      header { flex-direction:row; gap:12px; align-items:center; }
+      h1 { font-size:1.125rem; }
+      .layout { flex-direction:column; }
+      aside { width:100%; order:2; }
+      main { order:1; }
+      .cta { width:100%; } /* full width on mobile */
+      .logo { width:44px; height:44px; }
+      body { padding:12px; }
+    }
+
+    /* Larger screens — two column */
+    @media (min-width: 600px){
+      body { padding:24px; }
+      h1 { font-size:1.45rem; }
+      .site { padding:8px; }
+      .cta { display:inline-block; width:auto; }
+      .full-cta { width:100%; } /* if used */
+    }
+
+    /* Desktop — center container and keep content readable */
+    @media (min-width: 1000px){
+      .site { padding:0; }
+      .layout { gap:28px; }
+      main { padding:24px; }
+      aside { padding:20px; }
     }
   </style>
 
@@ -136,131 +208,122 @@
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Bonanza Network",
-    "image": "https://bonanzanetwork.net/logo.png",
+    "name": "Bonanza Network - Cleaning Services in Yuma",
     "url": "https://bonanzanetwork.net",
-    "telephone": "+1-928-000-0000",
+    "description": "Find the Best cleaning services in Yuma AZ — listings for local cleaners, move-in/out, deep clean, and eco-friendly providers. Bonanza Network supports local churches and nonprofits in Arizona.",
+    "telephone": "",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Serving Yuma and surrounding communities",
+      "streetAddress": "",
       "addressLocality": "Yuma",
       "addressRegion": "AZ",
-      "postalCode": "85364",
-      "addressCountry": "US"
+      "postalCode": "85364"
     },
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": 32.6927,
       "longitude": -114.6277
     },
-    "description": "Directory and resource to find the Best cleaning services in Yuma AZ including residential and commercial cleaners, vetted pros, and community-minded providers.",
     "areaServed": {
       "@type": "City",
       "name": "Yuma"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday","Tuesday","Wednesday","Thursday","Friday"
-      ],
-      "opens": "08:00",
-      "closes": "18:00"
     }
   }
   </script>
 </head>
 <body>
-  <div class="container">
-    <header class="site-header" role="banner">
-      <div>
-        <div class="title">Bonanza Network</div>
-        <div class="sub">Local directory for services in Arizona</div>
-      </div>
-      <div style="text-align:right;">
-        <div style="font-weight:700; font-size:14px;">Find trusted help</div>
-        <div style="font-size:13px; opacity:.95;">Serving Yuma, AZ</div>
-      </div>
+  <div class="site" role="main">
+    <header>
+      <a href="https://bonanzanetwork.net" class="brand" title="Bonanza Network">
+        <span class="logo" aria-hidden="true">BN</span>
+        <div>
+          <div style="font-weight:700; color:#111827;">Bonanza Network</div>
+          <div style="font-size:0.85rem; color:var(--muted); margin-top:2px;">Local services in Arizona</div>
+        </div>
+      </a>
+      <nav aria-label="Top">
+        <a href="https://bonanzanetwork.net" class="cta" style="background:transparent; color:var(--accent); border:2px solid var(--accent); padding:10px 12px;">Visit Bonanza Network</a>
+      </nav>
     </header>
 
-    <main class="card" role="main">
-      <h1>Best cleaning services in Yuma AZ</h1>
+    <div class="layout">
+      <main>
+        <div class="meta">Local listings • Yuma, AZ</div>
+        <h1>Best cleaning services in Yuma AZ</h1>
 
-      <p>Finding the best cleaning services in Yuma AZ means looking for providers who understand the local climate and home needs. Yuma's desert environment brings fine dust, seasonal pollen, and high-use entryways — factors that make regular professional cleaning worthwhile. Start by checking recent local reviews, asking about experience with desert-specific issues, and confirming insurance and bonding for peace of mind.</p>
+        <p>
+          Finding the best cleaning services in Yuma AZ means looking for companies that understand desert living: dust, pollen, and intense sun. Local cleaners who schedule around midday heat, use efficient water practices, and offer dust-control measures (like HEPA vacuums and microfiber cloths) will give you the best results while protecting your home and property.
+        </p>
 
-      <p>Whether you need move-in/move-out cleaning, recurring residential visits, or commercial janitorial help, compare quotes that break down labor, supplies, and any extra charges for heavy-duty tasks. Ask potential cleaners about their sanitation products (eco-friendly options are common), frequency discounts, and whether they perform an initial deep clean to establish a baseline for future services.</p>
+        <p>
+          When comparing companies, check for clear pricing, insurance, references, and experience with tasks common in Yuma — air-filter and duct attention after monsoon season, patio and outdoor cleaning, and gentle care for sun-exposed surfaces. Many reputable providers offer move-in/move-out cleans, recurring maintenance, and green cleaning options that use less water and non-toxic products.
+        </p>
 
-      <p>Local referrals are invaluable. Speak with neighbors, property managers, or small business owners in Yuma to learn who reliably arrives on time and maintains consistent quality. On Bonanza Network you can browse vetted listings for the Best cleaning services in Yuma AZ and filter by ratings, services offered, and availability so you can pick a team that fits your schedule and budget.</p>
+        <p>
+          Scheduling is important in Yuma's climate: early mornings and evenings are cooler and safer for technicians, and planning deep cleans outside of peak summer heat helps maintain worker safety and service quality. Read recent local reviews, ask about water-conservation steps, and confirm cancellation and rescheduling policies for monsoon or extreme heat events.
+        </p>
 
-      <p>Bonanza Network supports local churches and nonprofits in Arizona and highlights community-minded providers who donate time or discounts to organizations in need. If supporting local charities is important to you, look for cleaners who partner with community groups — it’s a great way to keep dollars circulating within Yuma while getting top-quality service.</p>
+        <p>
+          Bonanza Network helps you connect with vetted local cleaners and supports community groups — we proudly support local churches and nonprofits in Arizona by featuring trusted service providers and community listings.
+        </p>
 
-      <div class="cta">
-        <a class="btn" href="https://bonanzanetwork.net" rel="noopener" target="_blank">Find cleaning services on Bonanza Network →</a>
-        <div class="note">Compare providers, read reviews, and support local nonprofits.</div>
-      </div>
-
-      <section class="faq" aria-labelledby="faq-heading">
-        <h2 id="faq-heading">Frequently Asked Questions</h2>
-
-        <div class="qa">
-          <div class="question">How much do cleaning services in Yuma typically cost?</div>
-          <div class="answer">Prices vary by scope: standard residential cleanings commonly range from hourly rates to flat per-room fees. Expect higher costs for deep cleans, move-outs, or specialty services. Request itemized quotes and compare 2–3 local providers to get a fair market rate.</div>
+        <div class="local-tip" aria-live="polite">
+          <strong>Yuma seasonal tip:</strong> During monsoon season (typically July–September), expect more dust and pollen. Schedule a post-monsoon duct and filter clean, and book exterior patio and window cleaning for late fall when temperatures are milder. Opt for early-morning appointments in summer to avoid extreme heat.
         </div>
 
-        <div class="qa">
-          <div class="question">Do cleaners bring their own supplies and equipment?</div>
-          <div class="answer">Many Yuma cleaning teams bring standard supplies, but always confirm — especially if you prefer eco-friendly products or have pets and allergies. For commercial contracts, equipment like floor buffers or carpet machines may be extra; clarify who provides what before booking.</div>
-        </div>
+        <a class="cta full-cta" href="https://bonanzanetwork.net" rel="noopener" title="Find cleaning services" aria-label="Find cleaning services on Bonanza Network">Find cleaning services on Bonanza Network →</a>
 
-        <div class="qa">
-          <div class="question">Are cleaning companies in Yuma licensed and insured?</div>
-          <div class="answer">Reputable companies should be insured and, when applicable, licensed. Ask for proof of insurance and worker coverage before hiring. This protects you if damage or an accident occurs and is an important part of selecting the Best cleaning services in Yuma AZ.</div>
-        </div>
+        <section class="faq" aria-labelledby="faqs">
+          <h2 id="faqs" style="margin-top:16px;">Frequently Asked Questions</h2>
 
-      </section>
-    </main>
+          <div class="faq-item">
+            <details>
+              <summary>How much do cleaning services in Yuma typically cost?</summary>
+              <p>Costs vary by service type — hourly rates for general housecleaning, flat fees for one-time deep cleans, and special pricing for move-in/move-out jobs. Expect competitive local prices; request an itemized estimate and ask whether supplies and travel are included.</p>
+            </details>
+          </div>
+
+          <div class="faq-item">
+            <details>
+              <summary>Are cleaners in Yuma insured and background-checked?</summary>
+              <p>Reputable companies carry liability insurance and perform background checks on staff. Always ask for proof of insurance, worker verification policies, and whether the company provides bonded services for peace of mind.</p>
+            </details>
+          </div>
+
+          <div class="faq-item">
+            <details>
+              <summary>How should I prepare my Yuma home before a cleaner arrives?</summary>
+              <p>Clear personal clutter, secure pets, and point out areas needing special attention (e.g., dust-prone window sills or sun-faded surfaces). In summer, confirm that appointments are scheduled for cooler hours to keep staff safe and the service efficient.</p>
+            </details>
+          </div>
+
+        </section>
+      </main>
+
+      <aside aria-labelledby="explore-more">
+        <h2 id="explore-more" style="margin-top:0; margin-bottom:10px;">Explore More Arizona Local Services</h2>
+        <p style="margin:0 0 12px 0; color:var(--muted);">Find other trusted local providers across Arizona — from handyman services to lawn care and event support for nonprofits and churches.</p>
+        <ul class="explore-list" role="list">
+          <li><a href="https://bonanzanetwork.net" rel="noopener">Home repair & handyman services</a></li>
+          <li><a href="https://bonanzanetwork.net" rel="noopener">Lawn & irrigation specialists</a></li>
+          <li><a href="https://bonanzanetwork.net" rel="noopener">Event & facility support for churches</a></li>
+          <li><a href="https://bonanzanetwork.net" rel="noopener">Nonprofit and volunteer coordination</a></li>
+        </ul>
+        <div style="margin-top:12px;">
+          <a class="cta" href="https://bonanzanetwork.net" rel="noopener">Search local services on Bonanza Network</a>
+        </div>
+      </aside>
+    </div>
 
     <footer>
-      <div>© <span id="year"></span> Bonanza Network. All rights reserved. Visit <a href="https://bonanzanetwork.net" target="_blank" rel="noopener">Bonanza Network</a></div>
+      <div>© <span id="year"></span> Bonanza Network — All rights reserved.</div>
+      <div><a href="https://bonanzanetwork.net" rel="noopener">bonanzanetwork.net</a></div>
     </footer>
   </div>
 
   <script>
-    // set current year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Set dynamic year
+    (function(){ var y=new Date().getFullYear(); document.getElementById('year').textContent=y; })();
   </script>
-
-<!-- BEGIN: bonanza-internal-links -->
-<style>
-.bn-related-links{background:#fff7ed;border-top:3px solid #f97316;padding:2rem 1rem;margin-top:2rem;font-family:sans-serif}
-.bn-related-links h3{color:#c2410c;font-size:1.1rem;font-weight:700;margin-bottom:1.25rem;text-align:center}
-.bn-links-grid{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center}
-.bn-link-group{min-width:200px;max-width:300px;flex:1}
-.bn-link-heading{font-size:.85rem;font-weight:700;color:#7c3aed;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem}
-.bn-link-list{list-style:none;padding:0;margin:0}
-.bn-link-list li{margin-bottom:.35rem}
-.bn-link-list a{color:#f97316;text-decoration:none;font-size:.9rem}
-.bn-link-list a:hover{text-decoration:underline}
-.bn-network-badge{display:block;text-align:center;margin-top:1.5rem;font-size:.8rem;color:#9ca3af}
-.bn-network-badge a{color:#f97316;font-weight:600;text-decoration:none}
-</style>
-<section class="bn-related-links" aria-label="Related local service directories">
-  <h3>🔗 Explore More Arizona Local Services</h3>
-  <div class="bn-links-grid">
-    <div class="bn-link-group">
-            <h4 class="bn-link-heading">More Services in Yuma, AZ</h4>
-            <ul class="bn-link-list">
-              <li><a href="https://BonanzaNetwork.github.io/bn-yuma-contractors-az-1780025827656/" rel="noopener">Best contractors in Yuma AZ</a></li>
-            </ul>
-          </div>
-    <div class="bn-link-group">
-            <h4 class="bn-link-heading">Cleaning services in Other Arizona Cities</h4>
-            <ul class="bn-link-list">
-              <li><a href="https://BonanzaNetwork.github.io/bn-chandler-cleaning-services-az-1780015819756/" rel="noopener">Best cleaning services in Chandler AZ</a></li>
-            </ul>
-          </div>
-  </div>
-  <span class="bn-network-badge">Part of the <a href="https://bonanzanetwork.net" rel="dofollow">Bonanza Network</a> — Arizona's Community Business Directory</span>
-</section>
-<!-- END: bonanza-internal-links -->
 </body>
 </html>
